@@ -1,3 +1,4 @@
+import 'package:centro_medico_dayenu/navegacion.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -9,12 +10,11 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
-        ),
-      ),
+    return MaterialApp(
+      title: 'Dayenú',
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(primarySwatch: Colors.teal),
+      home: const Navegacion(),
     );
   }
 }
